@@ -16,3 +16,5 @@
 ### I don't know why you would do this but if you want to make some custom paddles or replace the ball with Obama or something, just name the file the thing you want to replace. So if you want to replace the ball, just name the image Ball.png, drag it in, and replace the current Balll.png. I hope this helps.
 # Thoughts
 ### Oh man oh man this could've been way better. Half way through making this I realized that I'd switched the positions of the player and computer images so that was a little bit of an oopsies on my end. I also couldn't figure how to get a decent AI for flappy pong that actually obeyed the physics of the game, so that was lovely. I also didn't use an ounce of OOP in this which probably would've made my code look a lot better. I think I will do just like a practice thing to make sure I can make a button class. I think next I'll take on Flappy Bird but I'll see where the wind takes me. Somethings on my list are some CS50 classes and University of Helsinki’s MOOC on Java.
+# Updates
+### Just updated the code to actually include a button class. It was pretty easy except some mishaps here and there.
