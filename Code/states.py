@@ -156,9 +156,11 @@ class Two_Player_Screen(GameState):
         )
 
     def update(self, event_info: EventInfo):
-        if self.left_button.was_clicked(event_info):
+        self.left_button.was_clicked(event_info)
+        if self.left_button.clicked:
             self.is_two_player = False
             self.is_over = True
+            print('clicky')
         if self.right_button.was_clicked(event_info):
             self.is_two_player = True
             self.is_over = True
@@ -188,7 +190,7 @@ class Classic_Pong_Game(GameState):
         self.computer_or_player_2_score = 0
         self.score_font = pygame.font.Font("..\\assets\\Teko-VariableFont_wght.ttf", 50)
         self.player_1_score_board_surf = pygame.image.load("..\\assets\\ScoreBar.png")
-        self.player_1_score_board_rect = self.player_1_score_board.get_rect(
+        self.player_1_score_board_rect = self.player_1_score_board_surf.get_rect(
             topleft=(0, 0)
         )
         self.computer_or_player_2_score_board_surf = pygame.transform.flip(

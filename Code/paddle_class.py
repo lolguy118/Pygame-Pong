@@ -21,10 +21,18 @@ class Paddle(pygame.sprite.Sprite):
             self.rect.y -= 5
         elif keys[pygame.K_DOWN] and self.is_player2:
             self.rect.y += 5
+        if self.rect.top <= 47:
+            self.rect.top = 47
+        if self.rect.bottom >= 450:
+            self.rect.bottom = 450
     def computer_move(self, ball_y_pos):
         if ball_y_pos > self.rect.y:
             self.rect.y += 5
         elif ball_y_pos < self.rect.y:
             self.rect.y -= 5
+        if self.rect.top <= 47:
+            self.rect.top = 47
+        if self.rect.bottom >= 450:
+            self.rect.bottom = 450
     def update(self):
         if self.is_player1 or self.is_player2: self.handle_input()
